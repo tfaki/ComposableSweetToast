@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/compose-model-1637762299507.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/ic_baseline_warning.xml" value="0.12407407407407407" />
+        <entry key="app/src/main/res/drawable/ic_error.xml" value="0.12407407407407407" />
+        <entry key="app/src/main/res/drawable/ic_info.xml" value="0.12407407407407407" />
+        <entry key="app/src/main/res/drawable/ic_success.xml" value="0.12407407407407407" />
+        <entry key="app/src/main/res/drawable/ic_warning.xml" value="0.12407407407407407" />
+      </map>
+    </option>
+  </component>
   <component name="FindBugsConfigurable">
     <option name="make" value="true" />
     <option name="effort" value="default" />
