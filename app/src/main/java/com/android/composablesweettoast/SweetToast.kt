@@ -39,7 +39,7 @@ class SweetToast(mContext: Context) : Toast(mContext) {
 
                 SweetToastType.SUCCESS -> {
                     views.setContent {
-                        Surface(modifier = Modifier.wrapContentSize(),color = Color.Transparent) {
+                        Surface(modifier = Modifier.wrapContentSize(), color = Color.Transparent) {
                             Row(
                                 modifier = Modifier
                                     .background(
@@ -71,7 +71,7 @@ class SweetToast(mContext: Context) : Toast(mContext) {
 
                 SweetToastType.WARNING -> {
                     views.setContent {
-                        Surface(modifier = Modifier.wrapContentSize(),color = Color.Transparent) {
+                        Surface(modifier = Modifier.wrapContentSize(), color = Color.Transparent) {
                             Row(
                                 modifier = Modifier
                                     .background(
@@ -136,7 +136,7 @@ class SweetToast(mContext: Context) : Toast(mContext) {
 
                 SweetToastType.ERROR -> {
                     views.setContent {
-                        Surface(modifier = Modifier.wrapContentSize(),color = Color.Transparent) {
+                        Surface(modifier = Modifier.wrapContentSize(), color = Color.Transparent) {
                             Row(
                                 modifier = Modifier
                                     .background(
