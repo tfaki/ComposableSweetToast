@@ -10,10 +10,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposableSweetToastTheme {
-                ShowSweetToast.Show(
+                SweetToastUtil.Show(
                     activity = this,
-                    message = "Hello World!",
-                    types = SweetToastType.SUCCESS
+                    message = "Hello world !",
+                    types = SweetToastType.WARNING
                 )
             }
         }

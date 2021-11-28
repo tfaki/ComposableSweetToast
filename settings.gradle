@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ComposableSweetToast"
 include ':app'
+include ':composablesweettoast'

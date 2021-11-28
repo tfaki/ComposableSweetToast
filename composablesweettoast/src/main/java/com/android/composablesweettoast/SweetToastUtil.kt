@@ -4,7 +4,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.Composable
 
-object ShowSweetToast {
+object SweetToastUtil {
     @Composable
     fun Show(activity: ComponentActivity, message: String, types: SweetToastType) {
         val sweetToast = SweetToast.makeTest(
