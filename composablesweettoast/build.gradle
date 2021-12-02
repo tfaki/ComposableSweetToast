@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -37,4 +38,18 @@ dependencies {
     implementation "androidx.compose.compiler:compiler:1.1.0-beta04"
     implementation 'androidx.activity:activity-ktx:1.4.0'
     testImplementation 'junit:junit:4.13.2'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.TalhaFaki'
+                artifactId = 'composablesweettoast'
+                version = '1.0'
+            }
+        }
+    }
 }
