@@ -1,6 +1,8 @@
-package com.android.composablesweettoast
+package com.talhafaki.composablesweettoast.toasttypes
 
 import androidx.compose.ui.graphics.Color
+import com.talhafaki.composablesweettoast.R
+import com.talhafaki.composablesweettoast.util.SweetToastProperty
 import com.android.composablesweettoast.ui.theme.colorSuccess
 
 

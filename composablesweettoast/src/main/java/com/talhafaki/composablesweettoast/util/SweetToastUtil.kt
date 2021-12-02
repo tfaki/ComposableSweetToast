@@ -1,4 +1,4 @@
-package com.android.composablesweettoast
+package com.talhafaki.composablesweettoast.util
 
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -17,7 +17,12 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.talhafaki.composablesweettoast.main.SweetToast
 import com.android.composablesweettoast.ui.theme.whiteBackground
+import com.talhafaki.composablesweettoast.toasttypes.Error
+import com.talhafaki.composablesweettoast.toasttypes.Info
+import com.talhafaki.composablesweettoast.toasttypes.Success
+import com.talhafaki.composablesweettoast.toasttypes.Warning
 
 object SweetToastUtil {
     @Composable

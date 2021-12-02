@@ -1,4 +1,4 @@
-package com.android.composablesweettoast
+package com.talhafaki.composablesweettoast.main
 
 import android.content.Context
 import android.widget.Toast
@@ -7,6 +7,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
 import androidx.lifecycle.*
 import androidx.savedstate.ViewTreeSavedStateRegistryOwner
+import com.talhafaki.composablesweettoast.util.SweetToastProperty
+import com.talhafaki.composablesweettoast.util.SweetToastUtil
 
 class SweetToast(mContext: Context) : Toast(mContext) {
 

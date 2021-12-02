@@ -1,4 +1,4 @@
-package com.android.composablesweettoast
+package com.talhafaki.composablesweettoast.util
 
 import androidx.compose.ui.graphics.Color
 
