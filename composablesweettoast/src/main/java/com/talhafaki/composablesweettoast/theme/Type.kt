@@ -1,4 +1,4 @@
-package com.android.composablesweettoast.ui.theme
+package com.talhafaki.composablesweettoast.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
