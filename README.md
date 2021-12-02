@@ -1,24 +1,33 @@
 
 
-## Structure
-* [build.gradle] - root gradle config file
-* [settings.gradle] - root gradle settings file
-* [app] - our only project in this repo
-* [app/build.gradle] - project gradle config file
-* [app/src] - main project source directory
-* [app/src/main] - main project flavour
-* [app/src/main/AndroidManifest.xml] - manifest file
-* [app/src/main/java] - java source directory
-* [app/src/main/res] - resources directory
-* [app/src/debug] - debug source directory
+# Composable Sweet Toast 
+[![](https://jitpack.io/v/TalhaFaki/ComposableSweetToast.svg)](https://jitpack.io/#TalhaFaki/ComposableSweetToast)
+
+A library that you can use in 4 different types(Success, Error, Warning, Info) written with Jetpack Compose. You can use this toast easy.
 
 ## Tech Stack:
 * Kotlin 
-* Navigation graph
 * Jetpack Compose
-* MVVM architecture 
 * Material Design
-* Junit & mockito for Testing 
-* Jacoco for test reporting
-* Github actions for CI/CD
+* Solid Principles
+* Custom View from Toast
 
+## How to install ? 
+You can add the library to your project using jitpack.io.
+
+Add the code below to your project's gradle file.
+
+```
+ allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
+   }
+```
+
+
+Add the code below to your app's gradle file.
+```
+implementation 'com.github.TalhaFaki:ComposableSweetToast:1.0'
+```
