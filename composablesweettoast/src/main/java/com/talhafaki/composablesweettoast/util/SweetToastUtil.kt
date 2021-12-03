@@ -25,10 +25,10 @@ import com.talhafaki.composablesweettoast.toasttypes.Success
 import com.talhafaki.composablesweettoast.toasttypes.Warning
 
 object SweetToastUtil {
+
     @Composable
-    fun ComponentActivity.SweetSuccess(message: String) {
-        val sweetToast = SweetToast.makeTest(
-            this,
+    fun SweetSuccess(message: String) {
+        val sweetToast = SweetToast.MakeTest(
             message,
             duration = Toast.LENGTH_LONG,
             type = Success()
@@ -37,9 +37,8 @@ object SweetToastUtil {
     }
 
     @Composable
-    fun ComponentActivity.SweetError(message: String) {
-        val sweetToast = SweetToast.makeTest(
-            this,
+    fun SweetError(message: String) {
+        val sweetToast = SweetToast.MakeTest(
             message,
             duration = Toast.LENGTH_LONG,
             type = Error()
@@ -48,9 +47,8 @@ object SweetToastUtil {
     }
 
     @Composable
-    fun ComponentActivity.SweetInfo(message: String) {
-        val sweetToast = SweetToast.makeTest(
-            this,
+    fun SweetInfo(message: String) {
+        val sweetToast = SweetToast.MakeTest(
             message,
             duration = Toast.LENGTH_LONG,
             type = Info()
@@ -59,9 +57,8 @@ object SweetToastUtil {
     }
 
     @Composable
-    fun ComponentActivity.SweetWarning(message: String) {
-        val sweetToast = SweetToast.makeTest(
-            this,
+    fun SweetWarning(message: String) {
+        val sweetToast = SweetToast.MakeTest(
             message,
             duration = Toast.LENGTH_LONG,
             type = Warning()
