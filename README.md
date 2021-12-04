@@ -31,3 +31,31 @@ Add the code below to your app's gradle file.
 ```
 implementation 'com.github.TalhaFaki:ComposableSweetToast:1.0'
 ```
+## Usage
+
+For Sweet Success with Short Duration : 
+```
+SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT)
+```
+![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/success.gif)
+
+For Sweet Error :
+```
+SweetError(message = "Error Text!")
+```
+![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/error.gif)
+
+For Sweet Warning : 
+```
+SweetWarning(message = "Warning Text!")
+```
+![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/warning.gif)
+
+For Sweet Info : 
+```
+SweetInfo(message = "Info Text!")
+```
+![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/info.gif)
+
+## Sample App: 
+[Click here for MainScreen](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/app/src/main/java/com/android/composablesweettoast/MainScreen.kt)
