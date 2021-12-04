@@ -15,7 +15,7 @@ A library that you can use in 4 different types(Success, Error, Warning, Info) w
 ## How to install ? 
 You can add the library to your project using jitpack.io.
 
-Add the code below to your project's gradle file.
+Add the code below to your project's settings.gradle file.
 
 ```
  allprojects {
