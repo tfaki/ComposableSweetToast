@@ -2,6 +2,7 @@
 
 # Composable Sweet Toast 
 [![](https://jitpack.io/v/TalhaFaki/ComposableSweetToast.svg)](https://jitpack.io/#TalhaFaki/ComposableSweetToast)
+![](https://img.shields.io/badge/Android%20Arsenal-ComposableSweetToast-green.svg?style=flat)
 
 A library that you can use in 4 different types(Success, Error, Warning, Info) written with Jetpack Compose. You can use this toast easy.
 
