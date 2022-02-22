@@ -30,13 +30,13 @@ Add the code below to your project's settings.gradle file.
 
 Add the code below to your app's gradle file.
 ```
-implementation 'com.github.TalhaFaki:ComposableSweetToast:1.0.0'
+implementation 'com.github.TalhaFaki:ComposableSweetToast:1.0.1'
 ```
 ## Usage
 
 For Sweet Success with Short Duration : 
 ```
-SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT)
+SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT, padding = PaddingValues(top = 16.dp), contentAlignment = Alignment.TopCenter)
 ```
 ![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/success.gif)
 
