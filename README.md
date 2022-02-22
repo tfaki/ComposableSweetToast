@@ -34,7 +34,7 @@ implementation 'com.github.TalhaFaki:ComposableSweetToast:1.0.1'
 ```
 ## Usage
 
-For Sweet Success with Short Duration : 
+For Sweet Success with Short Duration, Top Padding and Content Aligment : 
 ```
 SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT, padding = PaddingValues(top = 16.dp), contentAlignment = Alignment.TopCenter)
 ```
