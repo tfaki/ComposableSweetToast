@@ -1,10 +1,7 @@
 package com.android.composablesweettoast
 
 import android.widget.Toast
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
@@ -59,7 +56,7 @@ fun MainScreen() {
 
     if (openDialogSuccess) {
         openDialogSuccess = false
-        SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT)
+        SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT, padding = PaddingValues(top = 16.dp), contentAlignment = Alignment.TopCenter)
     }
 
     if (openDialogError) {
