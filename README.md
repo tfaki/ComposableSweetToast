@@ -30,7 +30,7 @@ Add the code below to your project's settings.gradle file.
 
 Add the code below to your app's gradle file.
 ```
-implementation 'com.github.TalhaFaki:ComposableSweetToast:$latest_version'
+implementation 'com.github.tfaki:ComposableSweetToast:$latest_version'
 ```
 ## Usage
 
