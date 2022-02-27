@@ -30,33 +30,41 @@ Add the code below to your project's settings.gradle file.
 
 Add the code below to your app's gradle file.
 ```
-implementation 'com.github.TalhaFaki:ComposableSweetToast:1.0.0'
+implementation 'com.github.tfaki:ComposableSweetToast:$latest_version'
 ```
 ## Usage
 
-For Sweet Success with Short Duration : 
+For Sweet Success with Short Duration, Top Padding and Aligment : 
 ```
-SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT)
+SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT, padding = PaddingValues(top = 16.dp), contentAlignment = Alignment.TopCenter)
 ```
-![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/success.gif)
-
+<p align="center">
+  <img src="https://github.com/TalhaFaki/ComposableSweetToast/blob/master/success.gif" alt="animated" />
+</p>
+  
 For Sweet Error :
 ```
 SweetError(message = "Error Text!")
 ```
-![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/error.gif)
+<p align="center">
+  <img src="https://github.com/TalhaFaki/ComposableSweetToast/blob/master/error.gif" alt="animated" />
+</p>
 
 For Sweet Warning : 
 ```
 SweetWarning(message = "Warning Text!")
 ```
-![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/warning.gif)
+<p align="center">
+  <img src="https://github.com/TalhaFaki/ComposableSweetToast/blob/master/warning.gif" alt="animated" />
+</p>
 
 For Sweet Info : 
 ```
 SweetInfo(message = "Info Text!")
 ```
-![](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/info.gif)
+<p align="center">
+  <img src="https://github.com/TalhaFaki/ComposableSweetToast/blob/master/info.gif" alt="animated" />
+</p>
 
 ## Sample App: 
 [Click here for MainScreen](https://github.com/TalhaFaki/ComposableSweetToast/blob/master/app/src/main/java/com/android/composablesweettoast/MainScreen.kt)

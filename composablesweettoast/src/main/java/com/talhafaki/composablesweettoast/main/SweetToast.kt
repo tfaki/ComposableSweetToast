@@ -2,7 +2,9 @@ package com.talhafaki.composablesweettoast.main
 
 import android.content.Context
 import android.widget.Toast
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.*
 import androidx.lifecycle.*
 import androidx.lifecycle.viewmodel.compose.LocalViewModelStoreOwner
@@ -16,7 +18,9 @@ class SweetToast(context: Context) : Toast(context) {
     fun MakeTest(
         message: String,
         duration: Int = LENGTH_LONG,
-        type: SweetToastProperty
+        type: SweetToastProperty,
+        padding: PaddingValues,
+        contentAlignment: Alignment
     ) {
         val context = LocalContext.current
 
@@ -25,7 +29,9 @@ class SweetToast(context: Context) : Toast(context) {
             SweetToastUtil.SetView(
                 messageTxt = message,
                 resourceIcon = type.getResourceId(),
-                backgroundColor = type.getBackgroundColor()
+                backgroundColor = type.getBackgroundColor(),
+                padding = padding,
+                contentAlignment = contentAlignment
             )
         }
 
