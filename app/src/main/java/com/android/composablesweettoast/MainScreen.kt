@@ -8,6 +8,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.talhafaki.composablesweettoast.main.SweetSnack
 import com.talhafaki.composablesweettoast.util.SweetToastUtil.SweetError
 import com.talhafaki.composablesweettoast.util.SweetToastUtil.SweetInfo
 import com.talhafaki.composablesweettoast.util.SweetToastUtil.SweetSuccess
@@ -23,6 +24,7 @@ fun MainScreen() {
     var openDialogError by remember { mutableStateOf(false) }
     var openDialogWarning by remember { mutableStateOf(false) }
     var openDialogInfo by remember { mutableStateOf(false) }
+    var openSnackBar by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -52,11 +54,22 @@ fun MainScreen() {
         }) {
             Text("Sweet Toast Info")
         }
+
+        Button(modifier = Modifier.padding(12.dp), onClick = {
+            openSnackBar = true
+        }) {
+            Text(text = "Sweet SnackBar")
+        }
     }
 
     if (openDialogSuccess) {
         openDialogSuccess = false
-        SweetSuccess(message = "Success Text!", duration = Toast.LENGTH_SHORT, padding = PaddingValues(top = 16.dp), contentAlignment = Alignment.TopCenter)
+        SweetSuccess(
+            message = "Success Text!",
+            duration = Toast.LENGTH_SHORT,
+            padding = PaddingValues(top = 16.dp),
+            contentAlignment = Alignment.TopCenter
+        )
     }
 
     if (openDialogError) {
@@ -74,4 +87,12 @@ fun MainScreen() {
         SweetInfo(message = "Info Text!")
     }
 
+    if (openSnackBar) {
+        openSnackBar = false
+        SweetSnack(
+            snackBarText = "Hellooo".repeat(50),
+            contentModifier = Modifier
+                .padding(12.dp)
+        )
+    }
 }
